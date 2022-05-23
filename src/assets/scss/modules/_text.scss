@@ -1,0 +1,43 @@
+@each $key,$val in $resolutions {
+  @media (min-width: $val) {
+    // Alignment
+    .text-#{$key}-left {
+      text-align: left;
+    }
+    .text-#{$key}-right {
+      text-align: right;
+    }
+    .text-#{$key}-center {
+      text-align: center;
+    }
+    .text-#{$key}-justify {
+      text-align: justify;
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+
+// Transformation
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+//shadow
+.text-shadow {
+  text-shadow: 2px 2px 10px $color-text;
+}

@@ -1,0 +1,79 @@
+.brand-sprite {
+  width: 153px;
+  height: 51px;
+  display: inline-block;
+  @include bg-img($image: "brands/brand_sprites.png");
+}
+
+.bg-KitchenAid {
+  background-position: -10px -10px;
+}
+.bg-Maytag {
+  background-position: -10px -81px;
+}
+.bg-Miele {
+  background-position: -183px -10px;
+}
+.bg-New_LG {
+  background-position: -183px -81px;
+}
+.bg-Premier {
+  background-position: -10px -152px;
+}
+.bg-samsung {
+  background-position: -183px -152px;
+}
+.bg-Thermadore {
+  background-position: -10px -223px;
+}
+.bg-Viking {
+  background-position: -183px -223px;
+}
+.bg-whirlpool {
+  background-position: -356px -10px;
+}
+.bg-wolf {
+  background-position: -356px -81px;
+}
+.bg-zero {
+  background-position: -356px -152px;
+}
+.bg-Amana {
+  background-position: -356px -223px;
+}
+.bg-Avanti {
+  background-position: -10px -294px;
+}
+.bg-Bertazzoni {
+  background-position: -183px -294px;
+}
+.bg-Bosch {
+  background-position: -356px -294px;
+}
+.bg-Electrolux {
+  background-position: -10px -365px;
+}
+.bg-Fisher_and_Paykel {
+  background-position: -183px -365px;
+}
+.bg-frigidaire {
+  background-position: -356px -365px;
+}
+.bg-Galanz {
+  background-position: -10px -436px;
+}
+.bg-GE {
+  background-position: -183px -436px;
+}
+.bg-Haier {
+  background-position: -356px -436px;
+}
+.bg-Hotpoint {
+  background-position: -529px -10px;
+}
+.bg-Jenn_Air {
+  background-position: -529px -81px;
+}
+.bg-Kenmore {
+  background-position: -529px -152px;
+}

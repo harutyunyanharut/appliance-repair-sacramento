@@ -1,0 +1,44 @@
+footer {
+  background-color: $footer-bg;
+  //font-size: $font-size-sm;
+  z-index: 1;
+  font-weight: 500;
+  color: #fff;
+  //@include position($right: 0, $bottom: 0, $left: 0);
+
+  .footer-top {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(239, 167, 101, 0.2);
+  }
+  .footer-middle {
+    border-bottom: 1px solid rgba(239, 167, 101, 0.2);
+  }
+  .footer-bottom {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+  }
+}
+
+.footer-cols {
+  display: flex;
+
+  .about-col {
+    width: 35%;
+    padding: 25px 25px 25px 0;
+    border-right: 1px solid rgba(239, 167, 101, 0.2);
+  }
+  .services-col {
+    width: 50%;
+    padding: 25px;
+    border-right: 1px solid rgba(239, 167, 101, 0.2);
+  }
+  .follow-col {
+    padding: 25px 0 25px 25px;
+    width: 15%;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,94 @@
+.list-inline-block {
+  & > li {
+    display: inline-block;
+  }
+}
+
+.list-margin-sm {
+  &> li {
+    & + li {
+      margin-left: 16px;
+    }
+  }
+}
+
+.list-margin-top {
+  &> li {
+    & + li {
+      margin-top: 10px;
+    }
+  }
+}
+
+.list-with-icons {
+  & > li {
+    position: relative;
+    padding-left: 40px;
+    min-height: 34px;
+
+    [class^="icon-"], [class*=" icon-"] {
+      font-size: $font-size-lg;
+      @include position($top: 0, $left: 0);
+    }
+  }
+}
+
+.list-bordered {
+  &> li {
+    border-bottom: 1px dashed $color-primary;
+    padding-bottom: 10px;
+  }
+}
+
+.list-info {
+  &> li {
+    position: relative;
+    //padding-left: 10px;
+    border-bottom: 1px dashed rgba($color-primary, 0.7);
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    &> label {
+      font-weight: 700;
+      margin-right: 5px;
+    }
+  }
+}
+
+.list-dotted {
+  padding-left: 60px;
+
+  &> li {
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $color-primary;
+      @include position($top: 3px, $left: -30px);
+    }
+  }
+}
+
+.list-brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -5px;
+  margin-right: -5px;
+
+  li {
+    margin-top: 10px;
+    width: 15.5%;
+    min-width: 155px;
+    height: 77px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}

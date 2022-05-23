@@ -1,0 +1,37 @@
+.h1 {
+  font-size: $font-size-h1;
+  font-weight: 600;
+  font-family: $font-primary;
+}
+
+.h2 {
+  font-size: $font-size-h2;
+  font-weight: 500;
+  font-family: $font-primary;
+  color: $color-text;
+}
+
+.h3 {
+  font-size: $font-size-h3;
+  font-weight: 500;
+  font-family: $font-primary;
+}
+
+.h4 {
+  font-size: $font-size-h4;
+  font-weight: 700;
+  font-family: $font-heading;
+}
+
+
+.h5 {
+  font-size: $font-size-h5;
+  font-family: $font-heading;
+  color: $color-primary;
+}
+
+.special-text {
+  font-size: 64px;
+  font-family: $font-secondary;
+  font-weight: 400;
+}

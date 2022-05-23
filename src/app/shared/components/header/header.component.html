@@ -1,0 +1,125 @@
+<header [ngClass]="isUserOnHome() ? 'abs' : ''">
+  <div class="header-top">
+    <div class="container header-top-content">
+      <div class="logo-area">
+        <a routerLink="" class="hover-img-opacity">
+          <img src="assets/img/{{isUserOnHome() && 'logo.png' || 'logo.png'}}" alt="Logo | Appliance Repair in Sacramento"/>
+        </a>
+      </div>
+      <div class="text-right">
+        <a href="tel:+19165871212" class="link font-weight-500"><i aria-hidden="true" class="icon-tel vertical-middle mr-1 font-size-lg"></i> (916) 587-1212</a>
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="container header-bottom-content">
+      <div>
+        <span class="cat-btn">
+          <i aria-hidden="true" class="icon-menu color-primary vertical-middle mr-2"></i>
+          <span>Categories <i aria-hidden="true" class="icon-arrow-down vertical-middle ml-1 cat-btn-arrow"></i></span>
+        </span>
+        <nav role="navigation" class="category-nav">
+          <ul class="list-menu container">
+            <li class="with-sub-list">
+              <strong class="sub-title">Sacramento Appliance Repair</strong>
+              <ul>
+                <li>
+                  <a routerLink="/services/washer-installation-sacramento">Washer Installation Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/services/washer-repair-sacramento">Washer Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/services/refrigerator-repair-sacramento">Refrigerator Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/services/freezer-repair-sacramento">Freezer Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/services/dishwasher-repair-sacramento">Dishwasher Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/services/oven-repair-sacramento">Oven Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/services/microwave-repair-sacramento">Microwave Oven Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/services/range-hood-installation">Range Hood Installation Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/services/dryer-repair-sacramento">Dryer Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/services/washer-dryer-repair-sacramento">Washer Dryer Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/services/stove-repair-sacramento">Stove Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/services/wine-cooler-repair-sacramento">Wine Cooler Repair Sacramento</a>
+                </li>
+              </ul>
+            </li>
+            <li class="with-sub-list">
+              <strong class="sub-title">Brands</strong>
+              <ul>
+                <li>
+                  <a routerLink="/brands/maytag-repair-sacramento">Maytag Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/brands/viking-repair-sacramento">Viking Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/brands/kitchen-aid-repair-sacramento-ca">KitchenAid Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/brands/whirlpool-repair-sacramento">Whirlpool Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/brands/jenn-air-repair-sacramento">Jenn-Air Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/brands/ge-repair-sacramento">GE Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/brands/frigidaire-repair-sacramento">Frigidaire Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/brands/kenmore-repair-sacramento-ca">Kenmore Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/brands/sub-zero-repair-sacramento-ca">Sub-Zero Repair Sacramento</a>
+                </li>
+                <li>
+                  <a routerLink="/brands/lg-repair-sacramento">LG Repair Sacramento</a>
+                </li>
+              </ul>
+            </li>
+            <li class="with-sub-list">
+              <strong class="sub-title">Technicians</strong>
+              <ul>
+                <li>
+                  <a routerLink="/appliance-technician-job">Appliance Technician Job</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <nav role="navigation" class="nav-links">
+        <ul class="nav-menu">
+          <li>
+            <a routerLink="/service-area">Service Area</a>
+          </li>
+          <li>
+            <a routerLink="/schedule-service">Schedule Service</a>
+          </li>
+          <li>
+            <a routerLink="contact-us">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

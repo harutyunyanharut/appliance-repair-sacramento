@@ -1,0 +1,12 @@
+.ng-invalid {
+  &.ng-touched {
+    border-color: $color-warning;
+  }
+}
+
+.error-msg {
+  color: $color-warning;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 3px;
+}

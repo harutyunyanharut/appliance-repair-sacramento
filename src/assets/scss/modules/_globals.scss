@@ -1,0 +1,133 @@
+// font weights
+$i: 100;
+@while $i <= 900 {
+  .w-#{$i} {
+    font-weight: $i;
+  }
+  $i: $i + 100;
+}
+
+//fixes
+.clear-after {
+  @include clear-after;
+}
+
+//fonts
+.font-primary {
+  font-family: $font-primary;
+}
+
+.font-secondary {
+  font-family: $font-secondary;
+}
+
+//img
+.img-area {
+  img {
+    max-width: 100%;
+  }
+}
+
+//sections
+.section-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &.pb-0 {
+    padding-bottom: 0;
+  }
+  &.pt-0 {
+    padding-top: 0;
+  }
+}
+
+.section-padding-lg {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  &.pb-0 {
+    padding-bottom: 0;
+  }
+  &.pt-0 {
+    padding-top: 0;
+  }
+}
+
+//displays
+.d-block {
+  display: block;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.d-flex {
+  display: flex;
+}
+.d-inline-flex {
+  display: inline-flex;
+}
+
+//aligns
+.vertical-middle {
+  vertical-align: middle;
+}
+.vertical-top {
+  vertical-align: top;
+}
+.vertical-bottom {
+  vertical-align: bottom;
+}
+
+//hovers
+.hover-img-opacity {
+  &:hover {
+    img {
+      opacity: 0.7;
+    }
+  }
+}
+
+//links
+.link {
+  cursor: pointer;
+  transition: all $trns-duration;
+
+  &:hover {
+    color: darken($color-primary, 10%);
+  }
+}
+
+.link-primary {
+  color: $color-primary;
+
+  &:hover {
+    color: darken($color-primary, 10%);
+  }
+}
+
+//line-heights
+.l-h-1 {
+  line-height: 1;
+}
+
+//font sizes
+@each $key,$val in $font-sizes {
+  .font-size-#{$key} {
+    font-size: #{$val};
+  }
+}
+
+//font weights
+@for $i from 1 through 7 {
+  .font-weight-#{$i*100} {
+    font-weight: $i*100;
+  }
+}
+
+.max-width-sm {
+  max-width: 360px;
+}
+
+.max-width-md {
+  max-width: 570px;
+}

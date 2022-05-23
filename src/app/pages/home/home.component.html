@@ -1,0 +1,97 @@
+<!-- hero section -->
+<section class="top-section color-white">
+  <div class="container">
+
+    <div class="top-section-content">
+      <h1 class="h1">Appliance Repair in Sacramento</h1>
+      <p class="info-content">Whatever your problems may be our skilled technicians are available 24 hours a day, 7 days a week to assist whenever you require support.</p>
+      <div class="mt-2">
+        <a class="btn primary mr-4" routerLink="/schedule-service">Schedule Service</a>
+        <a href="tel:+19165871212" class="btn primary liner color-white"><i aria-hidden="true" class="icon-tel vertical-middle mr-1 font-size-lg"></i> (916) 587-1212</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero section -->
+
+<!-- call schedule section -->
+<section class="section-padding bg-color-primary-lightest-bg">
+  <div class="container text-center lg-info">
+    <a href="tel:+19165871212" class="link font-weight-500"><i aria-hidden="true" class="icon-tel vertical-middle mr-1"></i> (916) 587-1212</a>
+    <span class="ml-10 mr-10 or-inside">or</span>
+    <a routerLink="/schedule-service" class="link font-weight-500"><i aria-hidden="true" class="icon-calendar vertical-middle mr-1"></i> Schedule Service</a>
+  </div>
+</section>
+<!-- end call schedule section -->
+
+<!-- Our Services section -->
+<app-services-list></app-services-list>
+<!-- end Our Services section -->
+
+<!-- schedule service section -->
+<app-schedule-service></app-schedule-service>
+<!-- end schedule service section -->
+
+<!-- brands section -->
+<section class="section-padding pb-0">
+  <div class="container">
+    <div class="container-md text-center">
+      <img src="assets/img/guaranteed.png" alt="satisfaction guaranteed">
+      <h3 class="h2 mt-4">Appliance Repair in Sacramento</h3>
+      <p class="mt-3 font-size-lg">Whatever your problems may be our skilled technicians are available 24 hours a day, 7 days a week to assist whenever you require support.</p>
+    </div>
+  </div>
+
+  <div class="bg-color-primary-bg text-center mt-6 section-padding hide-sm">
+    <div class="container">
+      <h2 class="h2 mb-6">Best Appliance Repair Fresno repairs all major brands of all major appliances</h2>
+
+      <ul class="list-brands">
+        <li *ngFor="let slide of brands">
+          <span class="brand-sprite {{slide.class}}"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- end brands section -->
+
+<!-- Contact Info section -->
+<section class="section-padding-lg text-center">
+  <div class="container">
+    <h2 class="h3 mb-4">Get In Touch With Us !</h2>
+    <div class="info-cols mt-10">
+      <div class="col">
+        <i aria-hidden="true" class="icon-tel vertical-middle mr-1 font-size-lg-x color-primary"></i>
+        <span class="d-block color-primary mt-3 mb-3 font-weight-500">Phone</span>
+        <a href="tel:+19165871212" class="link font-weight-500">(916) 587-1212</a>
+      </div>
+      <div class="col">
+        <i aria-hidden="true" class="icon-map vertical-middle mr-1 font-size-lg-x color-primary"></i>
+        <span class="d-block color-primary mt-3 mb-3 font-weight-500">Address</span>
+        <strong class="font-weight-500">8839 N Cedar Ave B-4 #5010, Fresno, CA 93720</strong>
+      </div>
+    </div>
+
+    <strong class="h3 d-block mt-10">Contact With Us!</strong>
+
+    <ul class="list-margin-sm social-btns-light d-inline-flex mt-3">
+      <li>
+        <a href="#" target="_blank" class="social-btn" rel="nofollow" title="Facebook | Appliance Repair in Fresno">
+          <i class="icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank" class="social-btn" rel="nofollow" title="Google | Appliance Repair in Sacramento">
+          <i class="icon-google"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank" class="social-btn" rel="nofollow" title="Instagram | Appliance Repair in Sacramento">
+          <i class="icon-instagram"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- end Contact Info section -->

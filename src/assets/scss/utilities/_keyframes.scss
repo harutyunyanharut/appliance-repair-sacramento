@@ -1,0 +1,94 @@
+@keyframes circle {
+  from{
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes show {
+  from {
+    transform: translate3d(-50%, -50%, 0);
+  }
+  to {
+    transform: translate3d(25%, -50%, 0);
+  }
+}
+
+@keyframes cover {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(91deg);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes svg-hand {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -299px);
+  }
+}
+
+@keyframes svg-mask {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 299px);
+  }
+}

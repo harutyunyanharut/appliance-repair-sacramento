@@ -1,0 +1,48 @@
+.table-latitude {
+  width: 100%;
+  font-size: 15px;
+
+  thead {
+    th {
+      text-transform: uppercase;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #F1F1F1;
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid #F1F1F1;
+      color: #75787b;
+      td {
+        padding: 10px;
+        border: 1px solid #F1F1F1;
+        vertical-align: middle;
+      }
+      th {
+        padding-left: 10px;
+        border: 1px solid #F1F1F1;
+        vertical-align: middle;
+      }
+    }
+  }
+  tfoot {
+    font-style: italic;
+    tr {
+      td {
+        padding: 10px;
+        border: 1px solid #F1F1F1;
+      }
+    }
+  }
+}
+
+.td-sm-img {
+  img {
+    width: 70px;
+  }
+}
+
+.table-content {
+  overflow-y: auto;
+}

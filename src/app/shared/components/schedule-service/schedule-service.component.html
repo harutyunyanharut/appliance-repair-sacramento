@@ -1,0 +1,171 @@
+<section class="section-padding">
+  <div class="container">
+    <div class="box-style">
+      <div class="animated" [ngClass]="{'zoom-out': isFormValidFade}">
+        <div class="text-center mb-8">
+          <p class="font-size-lg-x">Fill out the form below and we will, contact you as soon as possible</p>
+        </div>
+
+        <form [formGroup]="form" (ngSubmit)="submitForm()">
+          <div class="cols-md-2">
+            <div class="form-group col mt-4">
+              <label class="form-label" [ngClass]="{'color-warning': form.get('user_name')?.invalid && form.get('user_name')?.touched}">Name *</label>
+              <input
+                type="text"
+                class="form-control"
+                name="user_name"
+                formControlName="user_name"
+              >
+              <ul *ngIf="form.get('user_name')?.invalid && form.get('user_name')?.touched">
+                <li class="error-msg" *ngFor="let error of validationMessages.name" >
+                  <span *ngIf="form.get('user_name').hasError(error.type)">{{error.message}}</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group col">
+              <label class="form-label" [ngClass]="{'color-warning': form.get('phone_number')?.invalid && form.get('phone_number')?.touched}">Phone Number *</label>
+              <input
+                type="text"
+                class="form-control"
+                name="phone_number"
+                formControlName="phone_number"
+              >
+              <ul *ngIf="form.get('phone_number')?.invalid && form.get('phone_number')?.touched">
+                <li class="error-msg" *ngFor="let error of validationMessages.phone_number" >
+                  <span *ngIf="form.get('phone_number').hasError(error.type)">{{error.message}}</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group col">
+              <label class="form-label">E-Mail</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                formControlName="email"
+              >
+            </div>
+
+            <div class="form-group col">
+              <label class="form-label" [ngClass]="{'color-warning': form.get('address')?.invalid && form.get('address')?.touched}">Address *</label>
+              <input
+                type="text"
+                class="form-control"
+                name="address"
+                formControlName="address"
+              >
+              <ul *ngIf="form.get('address')?.invalid && form.get('address')?.touched">
+                <li class="error-msg" *ngFor="let error of validationMessages.address" >
+                  <span *ngIf="form.get('address').hasError(error.type)">{{error.message}}</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group col">
+              <label class="form-label" [ngClass]="{'color-warning': form.get('city')?.invalid && form.get('city')?.touched}">City</label>
+              <input
+                type="text"
+                class="form-control"
+                name="city"
+                formControlName="city"
+              >
+              <ul *ngIf="form.get('city')?.invalid && form.get('city')?.touched">
+                <li class="error-msg" *ngFor="let error of validationMessages.address" >
+                  <span *ngIf="form.get('city').hasError(error.type)">{{error.message}}</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group col">
+              <label class="form-label">Postal/Zip Code</label>
+              <input
+                type="text"
+                class="form-control"
+                name="zip"
+                formControlName="zip"
+              >
+            </div>
+
+            <div class="form-group col">
+              <label class="form-label">Date</label>
+              <div class="datepicker-content">
+                <input matInput [matDatepicker]="picker" placeholder="MM/DD/YYYY" class="form-control" formControlName="date">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </div>
+              <ul *ngIf="form.get('date')?.invalid && form.get('date')?.touched">
+                <li class="error-msg" *ngFor="let error of validationMessages.date" >
+                  <span *ngIf="form.get('date').hasError(error.type)">{{error.message}}</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group col time-picker-styles">
+              <label class="form-label">Time</label>
+              <ngx-timepicker-field class="form-control" formControlName="time"></ngx-timepicker-field>
+            </div>
+
+            <div class="form-group col">
+              <label class="form-label">Appliance</label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="appliance"
+              >
+            </div>
+
+            <div class="form-group col">
+              <label class="form-label">Brand</label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="brand"
+              >
+            </div>
+          </div>
+
+          <div class="form-group mt-4">
+            <label class="form-label">Problem Subject</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="problem"
+            >
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              name="message"
+              formControlName="message"
+            ></textarea>
+          </div>
+
+          <div class="mt-4 text-center">
+            <button type="submit" class="btn primary">SEND</button>
+          </div>
+        </form>
+      </div>
+
+      <!--success message -->
+      <div class="full-content-centered bg-color-white animated" [ngClass]="[isFormValidFade ? 'zoom-in' : 'zoom-out']" *ngIf="isFormValid">
+        <span class="hidden-loader loading check" [ngClass]="{'paused success': isSubmitSuccess}">
+          <span class="circle">
+            <span class="cover"></span>
+          </span>
+        </span>
+        <div class="hidden-content animated fade-in-up" *ngIf="isSubmitSuccess">
+          <div class="text-center font-weight-500 ">
+            <h3 class="h1 mb-5">Thank You!</h3>
+            <p class="mt-3 mb-5">We will contact you as soon as possible</p>
+            <a (click)="scheduleAgain()" class="btn primary lg shadow mt-10">Schedule Service Again</a>
+          </div>
+        </div>
+      </div>
+      <!--success message -->
+    </div>
+  </div>
+</section>

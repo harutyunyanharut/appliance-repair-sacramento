@@ -1,0 +1,145 @@
+.form-group {
+  & + .form-group {
+    margin-top: 20px;
+  }
+}
+
+textarea {
+  &.form-control {
+    height: 150px;
+    resize: none;
+  }
+}
+
+.form-control {
+  background: rgba(#fff, 0.8);
+  border: 2px solid  rgba(#167165, 0.15);
+  box-sizing: border-box;
+  font-family: $font-primary;
+  height: 56px;
+  width: 100%;
+  display: block;
+  color: $color-text;
+  font-size: $base-font-size;
+  transition: all $trns-duration;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 9px 12px;
+
+  &:focus {
+    border-color: $color-primary;
+  }
+}
+
+.form-select {
+  width: 100%;
+}
+
+.form-label {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: $font-size-md;
+}
+
+.form-check-label {
+  display: inline-block;
+
+  input {
+    display: none;
+
+    & + .check-info {
+      display: block;
+      padding-left: 30px;
+      position: relative;
+      text-align: center;
+      font-size: $font-size-sm;
+
+      &:before {
+        content: '';
+        font-family: $font-icons;
+        border: 1px solid $color-secondary;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        @include position($left: 0, $top: 0);
+      }
+    }
+    &:checked {
+      & + .check-info {
+        color: $color-primary;
+
+        &:before {
+          content: $icon-check;
+          border-color: $color-primary;
+        }
+      }
+    }
+  }
+}
+
+.datepicker-content {
+  position: relative;
+
+  .mat-datepicker-toggle {
+    @include position($top: 8px, $right: 10px);
+  }
+}
+
+.time-picker-styles {
+  .form-control {
+    .ngx-timepicker {
+      border-bottom: none;
+      position: relative;
+      width: 100%;
+
+      .ngx-timepicker__toggle {
+        @include position($top: 0, $right: 0);
+      }
+
+      .ngx-timepicker-control__input {
+        background-color: transparent;
+      }
+      .ngx-timepicker-control__arrow, .period-control__arrow {
+        line-height: 15px;
+        font-size: 15px;
+      }
+      .period-selector__button--active {
+        color: $color-primary;
+      }
+      .period-control__button:not(.period-control__button--disabled):focus:after {
+        display: none;
+      }
+      .ngx-timepicker-control--active {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+ngx-material-timepicker-content{
+  --body-background-color: #fff;
+  --primary-font-family: 'Roboto',sans-serif;
+  --button-color: #0693e3 !important;
+  --dial-active-color: #fff;
+  --dial-inactive-color: rgba(255, 255, 255, .5);
+  --dial-background-color: #0693e3 !important;
+  --dial-editable-active-color: #0693e3 !important;
+  --dial-editable-background-color: #fff;
+  --clock-face-time-active-color: #fff;
+  --clock-face-time-inactive-color: #6c6c6c;
+  --clock-face-inner-time-inactive-color: #929292;
+  --clock-face-time-disabled-color: #c5c5c5;
+  --clock-face-background-color: #f0f0f0;
+  --clock-hand-color: #0693e3 !important;
+}
+
+.mat-calendar-body-selected {
+  background-color: $color-primary;
+}
+.mat-datepicker-toggle-active {
+  color: $color-primary;
+}

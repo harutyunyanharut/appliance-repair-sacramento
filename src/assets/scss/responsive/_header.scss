@@ -1,0 +1,35 @@
+@media (max-width: $screen-sm) {
+  header {
+    .nav-menu {
+      justify-content: center;
+      margin-top: 20px;
+      font-size: 15px;
+
+      &> li {
+        & + li {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+  .header-bottom {
+    .header-bottom-content {
+      display: block;
+    }
+  }
+
+  .category-nav {
+    .list-menu {
+      flex-wrap: wrap;
+
+      &> li {
+        width: 50%;
+        margin-bottom: 20px;
+
+        & + li {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.services-bg {
+  @include bg-img($image: "bg/services/services-bg-xs.jpg", $repeat: no-repeat, $position: center, $size: cover);
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    background-size: cover;
+    background-color: rgba(#000, 0.6);
+    @include position($top: 0, $right: 0, $bottom: 0, $left: 0);
+  }
+  .container {
+    position: relative;
+  }
+}
+
+.services-list {
+  .btn {
+    text-transform: capitalize;
+    min-height: 80px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-width: 70px;
+    height: 100%;
+  }
+}

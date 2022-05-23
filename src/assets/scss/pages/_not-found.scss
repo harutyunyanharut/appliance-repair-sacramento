@@ -1,0 +1,13 @@
+.svg-hand {
+  transform: translate(0, -299px);
+  animation: svg-hand 3s;
+  }
+
+.svg-mask {
+  transform: translate(0, 299px);
+  animation: svg-mask 3s;
+}
+
+.not-found-svg {
+  max-width: 100%;
+}

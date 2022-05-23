@@ -1,0 +1,17 @@
+//icomoon
+@include font-face('icomoon/icomoon', $font-icons, normal, 400, false);
+
+@include font-face('montserrat/montserrat_bold/regular/montserrat-v23-latin-700', 'Montserrat', normal, 700);
+@include font-face('montserrat/montserrat_bold/italic/montserrat-v23-latin-700italic', 'Montserrat', italic, 700);
+
+@include font-face('montserrat/montserrat_semibold/regular/montserrat-v23-latin-600', 'Montserrat', normal, 600);
+@include font-face('montserrat/montserrat_semibold/italic/montserrat-v23-latin-600italic', 'Montserrat', italic, 600);
+
+@include font-face('montserrat/montserrat_medium/regular/montserrat-v23-latin-500', 'Montserrat', normal, 500);
+@include font-face('montserrat/montserrat_medium/italic/montserrat-v23-latin-500italic', 'Montserrat', italic, 500);
+
+@include font-face('montserrat/montserrat_regular/regular/montserrat-v23-latin-regular', 'Montserrat', normal, 400);
+@include font-face('montserrat/montserrat_regular/italic/montserrat-v23-latin-italic', 'Montserrat', italic, 400);
+
+
+@include font-face('lobster/lobster-v27-latin-regular', 'Lobster', normal, 400);

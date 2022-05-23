@@ -1,0 +1,35 @@
+@media (min-width: $screen-xxs) {
+  .services-bg {
+    @include bg-img($image: "bg/services/services-bg-xxs.jpg");
+  }
+}
+
+@media (min-width: $screen-xs) {
+  .services-bg {
+    @include bg-img($image: "bg/services/services-bg-xs.jpg");
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .services-bg {
+    @include bg-img($image: "bg/services/services-bg-sm.jpg");
+  }
+}
+
+@media (min-width: $screen-md) {
+  .services-bg {
+    @include bg-img($image: "bg/services/services-bg-md.jpg");
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .services-bg {
+    @include bg-img($image: "bg/services/services-bg-lg.jpg");
+  }
+}
+
+@media (min-width: $screen-lg-x) {
+  .services-bg {
+    @include bg-img($image: "bg/services/services-bg-lg-x.jpg");
+  }
+}

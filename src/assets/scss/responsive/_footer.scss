@@ -1,0 +1,13 @@
+@media (max-width: $screen-md) {
+  .footer-cols {
+    flex-wrap: wrap;
+
+    .about-col, .services-col, .follow-col {
+      width: 100%;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid rgba(239, 167, 101, 0.2);
+      padding: 25px;
+    }
+  }
+}
